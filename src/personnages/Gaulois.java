@@ -48,7 +48,7 @@ public class Gaulois {
 		Druide panoramix = new Druide("Panoramix", 5, 10);
 		panoramix.preparerPotion();
 		asterix.boirePotion(panoramix);
-		System.out.println(asterix.getNom());
+		System.out.println(asterix);
 		System.out.println(asterix.prendreParole());
 		asterix.parler("test");
 		asterix.frapper(minus);

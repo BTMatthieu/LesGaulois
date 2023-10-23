@@ -45,9 +45,21 @@ public class Druide {
 		}
 	}
 	
+	public void booster(Gaulois gaulois) {
+		if ((gaulois.getNom()).equals("Obélix")) {
+			parler("Non, Obélix !... Tu n'auras pas de potion magique !");
+		} else {
+			gaulois.boirePotion(this);
+		}
+	}
+	
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("Panoramix", 5, 10);
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		Gaulois obelix = new Gaulois("Obélix", 8);
 		panoramix.preparerPotion();
+		panoramix.booster(asterix);
+		panoramix.booster(obelix);
 	}
 }
 
